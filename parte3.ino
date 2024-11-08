@@ -34,7 +34,7 @@ void loop() {
     float current = (analogCurrent * (5.0 / 1023.0))/currentResistor;
   
     Serial.print(voltage, 3);
-    Serial.print(";");
+    Serial.print(",");
     Serial.println(current, 7);
 
     adjustFeedbackResistor(current*currentResistor);
